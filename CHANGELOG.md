@@ -2,6 +2,16 @@
 
 Based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
+## [0.2.2] - 2026-01-15
+
+## Fixed
+
+- Return value instead of node in `last_value` property
+- Correct `__repr__` to use `self.next` safely
+
+### Tests
+- Add parameterized case for empty stack in `Stack.push`
+
 ## [0.2.1] - 2026-01-14
 
 ### Added
