@@ -1,0 +1,3 @@
+class DSBaseExceptions(Exception):
+
+    pass
