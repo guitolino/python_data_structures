@@ -1,10 +1,11 @@
 [project]
-name="ds"
-version=0.1.0
-description="A collection of data structures, just for fun and for practice"
-authors=[{name="guito"}]
-dependencies=["pytest"]
+name = "ds"
+version = "0.1.0"
+description = "A collection of data structures, just for fun and for practice"
+authors = [{name = "guito"}]
+license = "MIT"
+dependencies = ["pytest"]
 
 [build-system]
-requires=["setuptools", "wheel"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
