@@ -2,7 +2,17 @@
 
 Based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
-## [ 0.2.0 ] - 2026-01-14
+## [0.2.1] - 2026-01-14
+
+### Added
+
+- Added `pytest` module to requirements.txt
+- Updated `README.md` content with:
+  - installation steps
+  - how to run tests
+  - project license
+
+## [0.2.0] - 2026-01-14
 
 ### Added
 
@@ -13,14 +23,14 @@ Based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 - Unit tests for each of these functions
 - Exposed `Stack` class in public API
 
-## [ 0.1.1 ] - 2026-01-14
+## [0.1.1] - 2026-01-14
 
 ### Fixed
 
 - Fixed format issues inside `pyproject.toml`
 - Added quotes in version string inside `pyproject.toml`
 
-## [ 0.1.0 ] - 2026-01-14
+## [0.1.0] - 2026-01-14
 
 ### Added
 
