@@ -5,4 +5,4 @@ class _Node():
         self.next: _Node | None = next
     
     def __repr__(self):
-        return f"value={self.value}\nnext={self.next.value}"
+        return f"value={self.value}\nnext={self.next.value if next else None}"

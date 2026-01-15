@@ -7,13 +7,14 @@ class TestStack:
     
 
     @pytest.mark.parametrize(
-            ("insertions", "last_value", "next_value"),
+            ("insertions", "last_value"),
             [
-        ((1, 2, 3, 4), 4, 3)
+        ((1, 2, 3, 4), 4,),
+        ((4,53,23,121,23), 23,),
+        ((), None,),
     ])
-    def test_push(self, insertions, last_value, next_value):
+    def test_push(self, insertions, last_value):
         for i in insertions:
             self.stack.push(i)
-        assert self.stack.last_value.value == last_value
-        assert self.stack.last_value.next.value == next_value
+        assert self.stack.last_value == last_value
         assert self.stack.length == len(insertions)

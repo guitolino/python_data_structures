@@ -13,8 +13,8 @@ class Stack:
         self.__length += 1
     
     @property
-    def last_value(self) -> _Node | None:
-        return self.__last_node 
+    def last_value(self) -> any | None:
+        return self.__last_node.value if self.__last_node else None
 
     @property
     def length(self) -> int:
