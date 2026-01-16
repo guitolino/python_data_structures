@@ -2,9 +2,19 @@
 
 Based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
+## [0.3.2] - 2026-01-15
+
+### Added
+
+- Implemented `pop()` function in class `Stack`.
+
+### Changed
+
+- Project now requires pytest>=7.0.0 insetad of pytest==9.0.2, giving users and developers more compatibility.
+
 ## [0.2.2] - 2026-01-15
 
-## Fixed
+### Fixed
 
 - Return value instead of node in `last_value` property
 - Correct `__repr__` to use `self.next` safely
