@@ -3,7 +3,7 @@ from ._internal._node import _Node
 
 
 class Stack:
-    __slot__ = ("__last_node", "__length")
+    __slots__ = ("__last_node", "__length")
     def __init__(self) -> None:
         self.__last_node: _Node | None = None
         self.__length: int = 0
@@ -21,6 +21,10 @@ class Stack:
         aux: Any = self.last_value
         self.__last_node = self.__last_node.next
         return aux
+
+    @property
+    def is_empty(self) -> bool:
+        return self.length == 0
 
     @property
     def last_value(self) -> Any | None:
