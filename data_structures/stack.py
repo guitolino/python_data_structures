@@ -22,13 +22,12 @@ class Stack:
         self.__last_node = self.__last_node.next
         return aux
 
+    def peek(self) -> Any | None:
+        return self.__last_node.value if self.__last_node else None
+
     @property
     def is_empty(self) -> bool:
         return self.length == 0
-
-    @property
-    def last_value(self) -> Any | None:
-        return self.__last_node.value if self.__last_node else None
 
     @property
     def length(self) -> int:
