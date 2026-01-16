@@ -18,7 +18,7 @@ class Stack:
         if not self.__last_node:
             return None
         
-        aux: Any = self.last_value
+        aux: Any = self.peek()
         self.__last_node = self.__last_node.next
         return aux
 
